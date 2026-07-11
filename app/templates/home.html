@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load static %}
+<title>
+  {% block title %}
+  <h1>Homepage</h1>
+  {% endblock  %}
+</title>
+<link rel="stylesheet" href="{% static "css/style.css" %}">
+<body>
+    {% block content %}
+     <section class="hero-sec d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-6 text-white">
+        <h6 class="text-uppercase">Explore The World</h6>
+        <h1 class="fw-bold display-5">Travel & Discover <br>Beautiful Places</h1>
+        <p class="mt-3">Find your next adventure and experience the world like never before.</p>
+        <a href="#" class="btn btn-primary mt-3">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-sec py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-12 col-md-6 text-center order-1 order-md-1">
+        <img src= {% static "images/about.jpg" %}
+             alt="Luxury travel" class="img-fluid rounded" />
+      </div>
+      <div class="col-12 col-md-6 order-2 order-md-2">
+        <h6 class="text-primary text-uppercase">About Us</h6>
+        <h2 class="fw-bold mb-3">We Make your Travel Luxury &amp; Comfy</h2>
+        <p class="text-muted lh-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eveniet id velit
+          asperiores recusandae quidem quos, quod et eaque corporis possimus dignissimos,
+          omnis dicta error, ullam officia esse! Voluptatibus, ad.
+        </p>
+        <p class="text-muted lh-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eveniet id velit
+          asperiores recusandae quidem quos, quod et eaque corporis possimus dignissimos,
+          omnis dicta error, ullam officia esse! Voluptatibus, ad.
+        </p>
+        <a href="#" class="btn btn-primary mt-2">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-sec py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h6 class="text-primary text-uppercase">Popular Destinations</h6>
+      <h2 class="fw-bold mb-2">Check Our Destinations</h2>
+      <p>Handpicked places loved by our travellers worldwide.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="destination-card">
+          <img src="{% static "images/japan.jpg" %}" alt="Okinawa, Japan" />
+          <div class="destination-content">
+            <span class="country">Japan</span>
+            <h5 class="fw-bold mb-1">Okinawa</h5>
+            <p class="small mb-0">Tropical islands with pristine beaches &amp; coral reefs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="destination-card">
+          <img src="{% static "images/Lyon.jpg" %}" alt="Lyon, France" />
+          <div class="destination-content">
+            <span class="country">France</span>
+            <h5 class="fw-bold mb-1">Lyon</h5>
+            <p class="small mb-0">Gastronomy capital with stunning Renaissance architecture.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="destination-card">
+          <img src="{% static "images/luxembourg.jpg" %}" alt="Differdange, Luxembourg" />
+          <div class="destination-content">
+            <span class="country">Luxembourg</span>
+            <h5 class="fw-bold mb-1">Differdange</h5>
+            <p class="small mb-0">A charming industrial-era city nestled in lush valleys.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="destination-card">
+          <img src="{% static "images/newzealand.jpg" %}" alt="Hamilton, New Zealand" />
+          <div class="destination-content">
+            <span class="country">New Zealand</span>
+            <h5 class="fw-bold mb-1">Hamilton</h5>
+            <p class="small mb-0">Garden city on the Waikato River with vibrant culture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-sec py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h6 class="text-primary text-uppercase">What Clients Say</h6>
+      <h2 class="fw-bold mb-2">Testimonials</h2>
+      <p>Real experiences from our happy travellers.</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 p-4">
+          <p class="text-muted mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, perferendis
+            nemo. Asperiores sunt earum aspernatur?
+          </p>
+          <div class="stars mb-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <span class="fw-bold">Pankaj Shukla, Jaipur</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 p-4">
+          <p class="text-muted mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, perferendis
+            nemo. Asperiores sunt earum aspernatur?
+          </p>
+          <div class="stars mb-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <span class="fw-bold">Daniel Ek, Finland</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 p-4">
+          <p class="text-muted mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, perferendis
+            nemo. Asperiores sunt earum aspernatur?
+          </p>
+          <div class="stars mb-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <span class="fw-bold">Manohar Tripathi, Ferozpur</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    {% endblock  %}
+</body>
