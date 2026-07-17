@@ -6,3 +6,7 @@ class Registration(models.Model):
     last_name = models.CharField(max_length=50)
     email_address = models.EmailField()
     password = models.CharField(max_length=25)
+
+    def __str__(self):
+        return self.name
+    
