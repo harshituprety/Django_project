@@ -17,3 +17,12 @@ class RegistrationForm(forms.ModelForm):
             'email_address': forms.EmailInput(attrs={'class': 'form-control'}),
             'password': forms.PasswordInput(attrs={'class': 'form-control'}),
         }
+
+class LoginForm(forms.ModelForm):
+    class Meta:
+        model = Registration
+        fields = ('email_address','password')
+        widgets = {
+            'email_address':forms.EmailInput(attrs={'class': 'form-control'}),
+            'password':forms.PasswordInput(attrs={'class': 'form-control'})
+        }
